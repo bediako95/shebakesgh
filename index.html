@@ -7,10 +7,28 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="Stylesheet" href="index.css" type="text/css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+
+    <script src="https://code.jquery.com/jquery-3.4.1.js">
+    </script>
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            $('#icon').click(function() {
+                $('ul').toggleClass('show');
+            })
+        })
+    </script>
+
+    <script src="index.js"></script>
+
 
 </head>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-<script src="index.js"></script>
+
 
 <body>
     <nav>
@@ -18,18 +36,36 @@
         <img src="download.png" id="logo">
     </label>
         <ul>
-            <li><a href="#" id="active">Home</a></li>
-            <li><a href="#">Services</a></li>
-            <li><a href="#">About Us</a></li>
-            <li><a href="#">Gallery</a></li>
-            <li><a href="#">Contact</a></li>
+            <li><a href="index.html" id="active">Home</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="contact.html">Contact</a></li>
 
         </ul>
+
+        <label id="icon">
+            <i class="fas fa-bars"></i>
+        </label>
 
     </nav>
 
 
-    <section id="cake">
+    <section id="welcome">
+        <img src="cake_1.jpg" alt="cake image" id="image_cake">
+        <h1 id="introduction">WELCOME TO SHEBAKES</h1>
+        <p id="motto">"Heart to hands, providing quality and affordable pastry products"</p>
+
+    </section>
+
+    <section id="more">
+        <h2 id="choose">Why Choose Us</h2>
+        <p id="why">• Wide and affordable range of products</p>
+        <br>
+        <p id="why">• Quality customer service</p>
+        <br>
+        <p id="why">• Offers fastest online cake delivery service</p>
+
 
     </section>
 
