@@ -1,204 +1,301 @@
-    * {
-        padding: 0;
-        margin: 0;
-        text-decoration: none;
-        list-style: none;
-    }
-    
-    #logo {
-        line-height: 80px;
-        border-radius: 50%;
-        padding: 10px 50px;
-    }
-    
-    body {
-        font-family: sans-serif;
-        background-repeat: no-repeat;
-    }
-    
-    nav {
-        height: 100%;
-        width: 100%;
-        background: black;
-    }
-    
-    nav ul {
-        float: right;
-        line-height: 80px;
-        margin-right: 40px;
-    }
-    
-    nav li {
-        display: inline-block;
-    }
-    
-    nav a {
-        color: white;
-        font-weight: bold;
-        text-transform: uppercase;
-        margin: 0px 8px;
-        padding: 7px 10px;
-        font-size: 18px;
-        border: 1px solid transparent;
-        border-radius: 5px;
-    }
-    
-    #active,
-    a:hover {
-        border: 1px solid orange;
-    }
-    
-    #icon {
-        color: white;
-        font-size: 30px;
-        float: right;
-        margin-right: 40px;
-        line-height: 80px;
-        cursor: pointer;
-        display: none;
-    }
-    
-    @media(max-width:1040px) {
-        #logo {
-            width: 170px;
-            padding: 5px 70px;
-        }
-        nav a {
-            font-size: 16px;
-            padding: 5px 10px;
-            margin: 0px 4px;
-        }
-        nav ul {
-            margin-right: 20px;
-            line-height: 80px;
-        }
-        #active,
-        a:hover {
-            border: none;
-            color: white;
-        }
-        nav ul.show {
-            left: 0;
-        }
-    }
-    
-    @media(max-width:909px) {
-        #logo {
-            width: 140px;
-            padding: 10px 80px;
-            margin-left: -40px;
-        }
-        #icon {
-            display: block;
-        }
-        nav a {
-            color: white;
-            font-size: 18px;
-        }
-        nav ul {
-            position: fixed;
-            width: 100%;
-            height: 100%;
-            left: -100%;
-            top: 80px;
-            text-align: center;
-            background-color: rgb(70, 8, 44);
-            transition: all 1s;
-        }
-        nav li {
-            display: block;
-            margin: 50px 0px;
-            line-height: 30px;
-        }
-        #active,
-        a:hover {
-            color: orange;
-            border: none;
-        }
-        nav ul.show {
-            left: 0;
-        }
-    }
-    
-    @media(max-width:500px) {
-        #logo {
-            width: 100px;
-            padding: 5px 40px;
-        }
-        #icon {
-            display: block;
-        }
-        nav a {
-            color: white;
-        }
-        nav ul {
-            position: fixed;
-            width: 100%;
-            height: 100%;
-            left: -100%;
-            top: 40px;
-            text-align: center;
-            background-color: rgb(218, 111, 116);
-        }
-        nav li {
-            display: block;
-            line-height: 25px;
-            margin: 25px 0px;
-        }
-        #ative,
-        a:hover {
-            color: orange;
-            transition: 1s;
-        }
-    }
-    
-    #image_cake {
-        background-repeat: no-repeat;
-        background-size: cover;
-        height: 500px;
-        width: 100vw;
-    }
-    
-    #introduction {
-        margin-top: -100px;
-        display: flex;
-        text-align: center;
-        justify-content: center;
-        font-size: 35px;
-        margin-right: 32%;
-        color: orange;
-        text-decoration: underline;
-        font-weight: bold;
-    }
-    
-    #motto {
-        color: white;
-        font-weight: bold;
-        margin-top: 10px;
-        margin-right: 34%;
-        display: flex;
-        text-align: center;
-        justify-content: center;
-    }
-    
-    #choose {
-        margin-left: 40px;
-        margin-top: 70px;
-        text-decoration: underline;
-        font-size: 30px;
-        color: rgb(63, 15, 15);
-    }
-    
-    #why {
-        font-size: 20px;
-        margin-top: 20px;
-        margin-left: 20px;
-    }
-    
-    #btn_view {
-        color: white;
-        background-color: rgb(6, 6, 71);
-        padding: 10px;
-        margin-left: 30px;
-        border-radius: 7%;
-    }
+                    * {
+                        padding: 0;
+                        margin: 0;
+                        text-decoration: none;
+                        list-style: none;
+                    }
+                    
+                    #logo {
+                        line-height: 80px;
+                        border-radius: 50%;
+                        padding: 10px 50px;
+                    }
+                    
+                    body {
+                        font-family: sans-serif;
+                        background-repeat: no-repeat;
+                    }
+                    
+                    nav {
+                        height: 100%;
+                        width: 100%;
+                        background: black;
+                    }
+                    
+                    nav ul {
+                        float: right;
+                        line-height: 80px;
+                        margin-right: 40px;
+                    }
+                    
+                    nav li {
+                        display: inline-block;
+                    }
+                    
+                    nav a {
+                        color: white;
+                        font-weight: bold;
+                        text-transform: uppercase;
+                        margin: 0px 8px;
+                        padding: 7px 10px;
+                        font-size: 18px;
+                        border: 1px solid transparent;
+                        border-radius: 5px;
+                    }
+                    
+                    #active,
+                    a:hover {
+                        border: 1px solid orange;
+                    }
+                    
+                    #icon {
+                        color: white;
+                        font-size: 30px;
+                        float: right;
+                        margin-right: 40px;
+                        line-height: 80px;
+                        cursor: pointer;
+                        display: none;
+                    }
+                    
+                    @media(max-width:1040px) {
+                        #logo {
+                            width: 170px;
+                            padding: 5px 70px;
+                        }
+                        nav a {
+                            font-size: 16px;
+                            padding: 5px 10px;
+                            margin: 0px 4px;
+                        }
+                        nav ul {
+                            margin-right: 20px;
+                            line-height: 80px;
+                        }
+                        #active,
+                        a:hover {
+                            border: none;
+                            color: white;
+                        }
+                        nav ul.show {
+                            left: 0;
+                        }
+                    }
+                    
+                    @media(max-width:909px) {
+                        #logo {
+                            width: 140px;
+                            padding: 10px 80px;
+                            margin-left: -40px;
+                        }
+                        #icon {
+                            display: block;
+                        }
+                        nav a {
+                            color: white;
+                            font-size: 18px;
+                        }
+                        nav ul {
+                            position: fixed;
+                            width: 100%;
+                            height: 100%;
+                            left: -100%;
+                            top: 80px;
+                            text-align: center;
+                            background-color: rgb(70, 8, 44);
+                            transition: all 1s;
+                        }
+                        nav li {
+                            display: block;
+                            margin: 50px 0px;
+                            line-height: 30px;
+                        }
+                        #active,
+                        a:hover {
+                            color: orange;
+                            border: none;
+                        }
+                        nav ul.show {
+                            left: 0;
+                        }
+                    }
+                    
+                    @media(max-width:500px) {
+                        #logo {
+                            width: 100px;
+                            padding: 5px 40px;
+                        }
+                        #icon {
+                            display: block;
+                        }
+                        nav a {
+                            color: white;
+                        }
+                        nav ul {
+                            position: fixed;
+                            width: 100%;
+                            height: 100%;
+                            left: -100%;
+                            top: 40px;
+                            text-align: center;
+                            background-color: rgb(218, 111, 116);
+                        }
+                        nav li {
+                            display: block;
+                            line-height: 25px;
+                            margin: 25px 0px;
+                        }
+                        #ative,
+                        a:hover {
+                            color: orange;
+                            transition: 1s;
+                        }
+                    }
+                    
+                    #image_cake {
+                        background-repeat: no-repeat;
+                        background-size: cover;
+                        height: 500px;
+                        width: 100vw;
+                    }
+                    
+                    #introduction {
+                        margin-top: -100px;
+                        display: flex;
+                        text-align: center;
+                        justify-content: center;
+                        font-size: 35px;
+                        margin-right: 32%;
+                        color: orange;
+                        text-decoration: underline;
+                        font-weight: bold;
+                    }
+                    
+                    #motto {
+                        color: white;
+                        font-weight: bold;
+                        margin-top: 10px;
+                        margin-right: 34%;
+                        display: flex;
+                        text-align: center;
+                        justify-content: center;
+                    }
+                    
+                    #choose {
+                        margin-left: 40px;
+                        margin-top: 70px;
+                        text-decoration: underline;
+                        font-size: 30px;
+                        color: rgb(63, 15, 15);
+                    }
+                    
+                    #why {
+                        font-size: 20px;
+                        margin-top: 20px;
+                        margin-left: 30px;
+                    }
+                    
+                    #btn_view {
+                        color: white;
+                        background-color: rgb(6, 6, 71);
+                        padding: 10px;
+                        margin-left: 40px;
+                        border-radius: 7%;
+                    }
+                    
+                    #image_show {
+                        margin-top: 40px;
+                        height: 250px;
+                        width: 100%;
+                    }
+                    
+                    #quick {
+                        margin-left: 40px;
+                        margin-top: 50px;
+                        color: orange;
+                        font-family: 'Times New Roman', Times, serif;
+                        font-weight: bold;
+                        text-decoration: underline;
+                    }
+                    
+                    #down {
+                        margin: 10px;
+                        margin-left: 40px;
+                        border: none;
+                        font-family: 'Times New Roman', Times, serif;
+                        color: white;
+                    }
+                    
+                    #bottom {
+                        margin-top: 70px;
+                        background-color: black;
+                    }
+                    
+                    #faq {
+                        margin: 10px;
+                        font-family: 'Times New Roman', Times, serif;
+                        margin-left: 40px;
+                        border: none;
+                        color: white;
+                        margin-bottom: 50px;
+                    }
+                    
+                    #loc {
+                        margin-top: -200px;
+                        color: orange;
+                        font-family: 'Times New Roman', Times, serif;
+                        font-weight: bold;
+                        margin-left: 260px;
+                        text-decoration: underline;
+                    }
+                    
+                    #place {
+                        margin-left: 260px;
+                        font-family: 'Times New Roman', Times, serif;
+                        color: white;
+                    }
+                    
+                    #social_media {
+                        padding: 20px;
+                        font-size: 30px;
+                        text-align: center;
+                        text-decoration: none;
+                    }
+                    /* Add a hover effect if you want */
+                    
+                    #social_media:hover {
+                        opacity: 0.7;
+                    }
+                    /* Set a specific color for each brand */
+                    /* Facebook */
+                    
+                    .fa-facebook {
+                        color: white;
+                        margin-left: 370px;
+                        width: 50px;
+                        background: #3B5998;
+                        border-radius: 50%;
+                        margin-bottom: 50px;
+                    }
+                    /* Twitter */
+                    
+                    .fa-twitter {
+                        color: white;
+                        background: #55ACEE;
+                        border-radius: 50%;
+                        width: 50px;
+                    }
+                    
+                    #follow {
+                        margin-left: 400px;
+                        margin-top: -70px;
+                        color: orange;
+                        font-family: 'Times New Roman', Times, serif;
+                        font-weight: bold;
+                        text-decoration: underline;
+                        margin-bottom: 20px;
+                    }
+                    
+                    #social {
+                        margin-left: 300px;
+                    }
