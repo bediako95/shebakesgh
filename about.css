@@ -1,0 +1,61 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+nav {
+    height: 100px;
+    width: 100%;
+    background: rgb(44, 6, 6);
+}
+
+body {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-image: url(cake_4.jpg);
+}
+
+#about {
+    color: white;
+    font-weight: bold;
+    font-size: 35px;
+    justify-content: center;
+    margin: 170px;
+}
+
+#mission {
+    color: red;
+    font-weight: bold;
+    text-decoration: underline;
+    margin-top: 40px;
+    text-align: center;
+}
+
+#vision {
+    color: red;
+    font-weight: bold;
+    text-decoration: underline;
+    margin-top: 90px;
+    text-align: center;
+}
+
+#values {
+    color: red;
+    font-weight: bold;
+    text-decoration: underline;
+    margin-top: 90px;
+    text-align: center;
+}
+
+p {
+    color: white;
+    background-color: white;
+    color: black;
+    padding: 10px;
+    border-radius: 15px;
+    text-align: center;
+    font-weight: bold;
+    margin-top: 20px;
+    font-size: 20px;
+    margin-left: 160px;
+    margin-right: 160px;
+}

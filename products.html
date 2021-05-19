@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="Stylesheet" href="index.css" type="text/css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+
+    <script src="https://code.jquery.com/jquery-3.4.1.js">
+    </script>
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+
+    <script>
+        $(document).ready(function() {
+            $('#icon').click(function() {
+                $('ul').toggleClass('show');
+            })
+        })
+    </script>
+
+    <script src="index.js"></script>
+
+
+</head>
+
+
+<body>
+    <nav>
+        <label>
+        <img src="download.png" id="logo">
+    </label>
+        <ul>
+            <li><a href="index.html" id="active">Home</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="contact.html">Contact</a></li>
+
+        </ul>
+
+        <label id="icon">
+            <i class="fas fa-bars"></i>
+        </label>
+
+    </nav>
+
+
+    <section id="welcome">
+        <img src="cake_1.jpg" alt="cake image" id="image_cake">
+        <h1 id="introduction">WELCOME TO SHEBAKES</h1>
+        <p id="motto">"Heart to hands, providing quality and affordable pastry products"</p>
+
+    </section>
+
+    <section id="more">
+        <h2 id="choose">Why Choose Us</h2>
+        <p id="why">• Wide and affordable range of products</p>
+        <br>
+        <p id="why">• Quality customer service</p>
+        <br>
+        <p id="why">• Offers fastest online cake delivery service</p>
+
+
+    </section>
+
+    <section id="price">
+        <h2 id="choose">Product & Prices</h2>
+        <p id="why">Check out our products and prices</p>
+
+        <br>
+        <button id="btn_view" onclick="window.location.href='products.html'">VIEW PRODUCTS</button>
+        <br>
+        <img src="cake_2.jpg" alt="cake image" id="image_show">
+    </section>
+
+    <section id="bottom">
+        <br>
+        <p id="quick">Quick Links</p>
+        <br>
+
+        <br>
+        <a href="#" id="down" target="_blank">Home</a>
+        <br>
+
+        <br>
+        <a href="#" id="down">Delivery services</a>
+        <br>
+
+        <br>
+        <a href="#" id="down" target="_blank">Menu</a>
+        <br>
+
+        <br>
+        <a href="#" id="faq" target="_blank">FAQ</a>
+        <br>
+        <br>
+        <br><br>
+        <br>
+
+    </section>
+
+    <div>
+        <p id="loc">Location</p>
+        <br>
+        <a href="#" id="place">East Legon</a>
+        <br><br>
+    </div>
+
+    <div class="social">
+        <p id="follow">Follow us on</p>
+        <label id="social_media">
+        <a href="https://www.facebook.com/steamanexpress/" class="fa fa-facebook" target="_blank"></a>
+        <a href="https://twitter.com/expresssteaman?lang=en" class="fa fa-twitter" target="_blank"></a>
+        <a href="https://www.instagram.com/shebakesgh/reels/?hl=en" class="fa fa-instagram" target="_blank"></a>
+    </label>
+    </div>
+
+    <p id="copyright">
+        <i>Copyright &copy; 2021 by Shebakesgh. All rights reserved.Powered by <em>PYSTUDIOS</em></i>
+    </p>
+
+
+</body>
+
+</html>
